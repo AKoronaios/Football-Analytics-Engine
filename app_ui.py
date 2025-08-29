@@ -69,9 +69,9 @@ if menu == "🏠 Home":
     st.subheader("Your all-in-one scouting & squad analysis dashboard")
     st.write("""
     Using Football Manager Analytics Engine you can analyzing statistics to find new players
-    and use custom metrics to evaluate and rank players, according to your needs and like.
-    You can also analyze and evaluate your squad and find players simillar to yours usind data analysis or
-    simply ask AI to act as you own Performance Analyst and produce a detail analyst of your squad point on
+    and use custom metrics to evaluate and rank players, according to your needs and like.\n
+    You can also analyze and evaluate your squad and find players simillar to yours usind data analysis or\n
+    simply ask AI to act as you own Performance Analyst and produce a detail analyst of your squad point on\n
     strengths and weakness you need to improve in order to achieve glory !! 
 
     Use the menu on the left to:
@@ -314,5 +314,6 @@ elif menu == "🧬 Find Similar Players":
                     st.plotly_chart(fig, use_container_width=True)
     else:
         st.warning("⚠ Please load both scouting and squad data first.")
+
 
 
