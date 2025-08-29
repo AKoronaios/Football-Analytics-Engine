@@ -84,7 +84,7 @@ if menu == "🏠 Home":
     # st.image("https://diamondfootball.com/news/birds-eye-view-of-a-football-pitch.jpg?w1200", use_container_width=True)
 
     # Add a download button
-    with open("D:/Football Manager Analytics Engine/views.zip", "rb") as file:
+    with open("views.zip", "rb") as file:
         st.download_button(
         label="⬇️ Download Scouting & Squad Template",
         data=file,
@@ -314,4 +314,5 @@ elif menu == "🧬 Find Similar Players":
                     st.plotly_chart(fig, use_container_width=True)
     else:
         st.warning("⚠ Please load both scouting and squad data first.")
+
 
