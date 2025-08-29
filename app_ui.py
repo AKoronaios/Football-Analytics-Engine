@@ -86,7 +86,7 @@ if menu == "🏠 Home":
     # Add a download button
     with open("views.zip", "rb") as file:
         st.download_button(
-        label="⬇️ Download Scouting & Squad Template",
+        label="⬇️ Download Scouting & Squad Views",
         data=file,
         file_name="views.zip",
         mime="file/zip"
@@ -314,6 +314,7 @@ elif menu == "🧬 Find Similar Players":
                     st.plotly_chart(fig, use_container_width=True)
     else:
         st.warning("⚠ Please load both scouting and squad data first.")
+
 
 
 
