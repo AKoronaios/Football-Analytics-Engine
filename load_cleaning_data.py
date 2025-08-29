@@ -1,4 +1,3 @@
-!pip install scipy
 import pandas as pd
 import numpy as np
 from scipy.stats import percentileofscore
@@ -225,5 +224,6 @@ def load_cleaning_data(data_path,free_agent_day='30/6/2026',squad=False):
     roles_calculation(full_df)
 
     return full_df
+
 
 
