@@ -43,7 +43,7 @@ if "df_scout" not in st.session_state:
     st.session_state.df_scout = None
 if "df_squad" not in st.session_state:
     st.session_state.df_squad = None
-if "filtered_df" not in session_state:
+if "filtered_df" not in st.session_state:
     st.session_state.filtered_df = None
     
 # -----------------------
@@ -316,6 +316,7 @@ elif menu == "🧬 Find Similar Players":
                     st.plotly_chart(fig, use_container_width=True)
     else:
         st.warning("⚠ Please load both scouting and squad data first.")
+
 
 
 
